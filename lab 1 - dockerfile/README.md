@@ -60,3 +60,17 @@ git status
 git add .
 git commit -m "first_commit"
 git push
+
+
+1. Install Node JS
+2. Verify - (node -v)
+3. Create new folder for lab1
+4. Open terminal + configure node - (npm init -y)
+5. npm install express
+6. https://expressjs.com/ -> copy paster - (server.js) - port 3000
+7. Check if application work locally - node server.js
+8. Create Dockerfile - using FROM COPY*2 RUN EXPOSE CMD
+9. Docker build
+10. Docker run new image and test in browser - port 5000
+
+11. Push to GIT

@@ -1,6 +1,0 @@
-my first command
-my second command - using volume
-my third command - from windows
-my fourth test
-
-my database

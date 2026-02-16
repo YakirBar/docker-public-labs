@@ -48,3 +48,35 @@ browser 6000
 application 5000
 
 docker run -d -p 7000:5000 -e PORT=5000 lab2-env:v0.2
+
+
+1. Create new folder for lab2
+2. Open terminal + configure node - (npm init -y)
+3. npm install express
+4. npm install dotenv
+5. use .env file - port = 4000
+
+6. https://expressjs.com/ -> copy paste - 
+
+require('dotenv').config()
+const port = process.env.PORT || 3000
+(server.js) - port 4000
+
+7. Check if application work locally - npm start
+8. Create Dockerfile - using FROM COPY*2 RUN EXPOSE CMD (without ENV)
+9. Docker build
+10. Docker run new image and test in browser - port 4000
+
+11. Create Dockerfile - using FROM COPY*2 RUN EXPOSE CMD ENV (port = 5000)
+12. Docker build
+13. Docker run new image and test in browser - port 5000
+
+14. Docker run new image using -e flag and test in browser - browser: 4000 aplication: 3500
+15. Push to GIT (.env)
+
+https://expressjs.com/
+https://hub.docker.com/
+
+"scripts": {
+  "start": "node server.js"
+},
