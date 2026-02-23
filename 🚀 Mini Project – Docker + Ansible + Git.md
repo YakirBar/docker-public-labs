@@ -1,8 +1,8 @@
-# 🚀 Final Project – Docker + Ansible + Git
+# 🚀 Mini Project – Docker + Ansible + Git
 
 ## 🎯 Project Overview
 
-In this final project you will build a complete DevOps environment that includes:
+In this mini project you will build a complete DevOps environment that includes:
 
 * 🐳 Docker (image creation & container orchestration)
 * ⚙️ Ansible (infrastructure automation)
@@ -138,11 +138,11 @@ The Ansible Master is responsible for:
 * Work on a dedicated branch (example):
 
 ```
-feature/final-project
+feature/mini-project
 ```
 
 * Open a Pull Request at the end of the project
-* The `MAIN` branch must contain ONLY the README file until final approval
+* The `MAIN` branch must contain ONLY the README file until mini approval
 
 ## 👤 Add Collaborator
 
@@ -158,7 +158,7 @@ Only after PR approval will it be merged into MAIN.
 # 📁 Recommended Folder Structure
 
 ```
-final-project/
+mini-project/
 │
 ├── ansible/
 │   ├── inventory.ini
