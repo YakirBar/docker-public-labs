@@ -1,0 +1,42 @@
+services:
+  application:
+    restart: always
+    image: lab5-homework-node:v0.2
+    container_name: lab5-application
+    ports:
+      - "4000:3010"
+    environment:
+      - DB_HOST=mysql-server
+      - DB_PORT=3306
+    networks:
+      - lab5-homework
+    depends_on:
+      - mysql-server
+  mysql-client:
+    restart: always
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: lab5-mysql-client
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql-server
+      MYSQL_ROOT_PASSWORD: secretPassword
+    depends_on:
+      - mysql-server
+    networks:
+      - lab5-homework
+  mysql-server:
+    restart: always
+    image: mysql:latest
+    container_name: lab5-mysql-server
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=secretPassword
+    networks:
+      - lab5-homework
+
+networks:
+  lab5-homework:
+    driver: bridge
+    external: true
