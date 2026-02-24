@@ -142,7 +142,7 @@ feature/mini-project
 ```
 
 * Open a Pull Request at the end of the project
-* The `MAIN` branch must contain ONLY the README file until mini approval
+* The `MAIN` branch must contain ONLY the README file final mini approval
 
 ## 👤 Add Collaborator
 
